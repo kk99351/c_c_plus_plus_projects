@@ -95,9 +95,9 @@ int partition(int arr[],int start,int end){
             swap(arr[i],arr[j]);
             i++;
         }
-        swap(arr[i-1],arr[start]);
-        return i-1;
     }
+    swap(arr[i-1],arr[start]);
+    return i-1;
 }
 void quick_sort(int arr[],int start,int end){
     if (start<end){
@@ -138,6 +138,6 @@ int main(){
     int arr[len];
     initializer(arr,len);
     display(arr,len);
-    merge_sort(arr,0,len-1);
+    quick_sort(arr,0,len-1);
     display(arr,len);
 }

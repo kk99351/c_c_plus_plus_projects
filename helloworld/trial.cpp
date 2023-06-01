@@ -1,19 +1,30 @@
-#include <iostream>
+#include <bits.stdc++.h>
 using namespace std;
-int main() {
-	int q,n,l,r;
-	cin>>n>>q;
-	int ar[n],xorr=0,xorr1=0;
-	for(int i=0;i<n;i++){
-			cin>>ar[i];
-			xorr = xorr^ar[i];
-		}
-	while(q--){
-		xorr1=0;
-		cin>>l>>r;
-		for(int i=l-1;i<r;i++){
-			xorr1 = xorr1^ar[i];
-		}
-		cout<<(xorr^xorr1)<<endl;
-	}
+struct ListNode{
+    int val;
+    struct 
+}
+int main(){
+    ListNode *list;
+        while(list1 != NULL && list2 != NULL){
+            if (list1->val > list2->val){
+                list->next = list2;
+                list2 = list2->next;
+            }
+            else{
+                list->next = list1;
+                list1 = list1->next;
+            }
+            list = list->next;
+        }
+        while(list1 != NULL){
+            list->next = list1;
+            list1 = list1->next;
+            list = list->next;
+        }
+        while(list2 != NULL){
+            list->next = list2;
+            list2 = list2->next;
+            list = list->next;
+        
 }
